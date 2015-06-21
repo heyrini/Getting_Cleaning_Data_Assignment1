@@ -5,8 +5,7 @@
 #Load needed libraries
 library(plyr)
 
-#
-setwd("C:\\Users\\hkandadi\\Desktop\\Getting_Cleaning_Data")
+#Download file
 url<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 
 temp<-tempfile()
