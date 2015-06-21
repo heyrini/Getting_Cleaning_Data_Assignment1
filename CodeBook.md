@@ -13,25 +13,25 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 ###Attribute Information:
 For each record in the dataset it is provided: 
-- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
-- Triaxial Angular velocity from the gyroscope. 
-- A 561-feature vector with time and frequency domain variables. 
-- Its activity label. 
-- An identifier of the subject who carried out the experiment.
+* Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
+* Triaxial Angular velocity from the gyroscope. 
+* A 561-feature vector with time and frequency domain variables. 
+* Its activity label. 
+* An identifier of the subject who carried out the experiment.
 
 ###Data Transformation and Variables used
 The subject annotation and activity ids were merged with train and test datasets to create two intermediate datasets:
--Annotated.train
--Annotated.test
+* Annotated.train
+* Annotated.test
 
 Then the two sets were merged to form the full data sets as 
--full.data
+* full.data
 
 Then data was subsetted using only "mean" and "std" containing feature variables into 
--data.mean.std
+* data.mean.std
 
 Data was averaged by each feature based on subject and activity groups into
--data.mean.bygroups
+* data.mean.bygroups
 
 This was written into a text file which is uploaded as
--Data.mean.by.sub.activity.txt
+* Data.mean.by.sub.activity.txt
